@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			background-image: url(image/bg.png);
+			background-repeat: no-repeat;
+		}
+		.test{
+			position: relative;
+		}
+		.chuan{
+			position: absolute;
+			top: 200px;
+			left: 100px;
+			z-index: 9;
+			animation: turn 3s linear infinite;
+
+		}
+		.wave1{
+			position: absolute;
+			top: 700px;
+			z-index: 999;
+			animation: turnaround 3s linear infinite;
+		}
+		#wave2{
+			position: absolute;
+			top: 650px;
+			z-index: 99;
+			animation: turnaround 3s linear infinite;
+
+		}
+		#wave3{
+			position: absolute;
+			top: 600px;
+			z-index: 1;
+			animation: turnaround 3s linear infinite;
+	
+		}
+		@keyframes turn{
+			0%{
+				transform: rotate(-2deg);
+			}
+			50%{
+				transform: rotate(5deg);
+			}
+			100%{
+				transform: rotate(-2deg);
+			}
+
+		}
+		@keyframes turnaround{
+			0%{
+				transform: translateX(0);
+			}
+			50%{
+				transform: translateX(-80px);
+			}
+			100%{
+				transform: translateX(0);
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="test">
+		<div class="chuan">
+			<img src="image/chuan.png" alt="">
+		</div>
+		<img class="wave1" src="image/wave1.png" alt="">
+		<img id="wave2" src="image/wave2.png" alt="">
+		<img id="wave3" src="image/wave3.png" alt="">
+	</div>
+	
+</body>
+</html>

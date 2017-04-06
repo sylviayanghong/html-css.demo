@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.btn li{
+			width: 20px;
+			height: 20px;
+			border: 1px solid #000;
+			list-style: none;
+			float: left;
+			text-align: center;
+			line-height: 20px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<img class="pic" src="image/0.jpg" alt="">
+	<ul class="btn">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+	</ul>
+
+	<script src='jquery.js'></script>
+	<script>
+		
+		$('.btn li').click(function(){
+			var num = $(this).index();
+			var picSrc = [
+				'image/0.jpg',
+				'image/1.jpg',
+				'image/2.jpg',
+				'image/3.jpg',
+				'image/4.jpg'
+				];
+			var mysrc = picSrc[num];
+			$('.pic').attr('src',mysrc);
+		});
+
+	</script>
+</body>
+</html>

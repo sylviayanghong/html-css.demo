@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box1{
+			width: 20px;
+			height: 20px;
+			margin: 20px auto;
+			background-color: #f00;
+			animation: turnaround 5s infinite;
+			/*transform-origin: left;*/
+		}
+		.box2{
+			width: 50px;
+			height: 20px;
+			margin: 20px auto;
+			background-color: #999;
+			animation: ture 5s infinite;
+			/*transform-origin: left;*/
+		}
+		@keyframes turnaround{
+			0%{
+				transform: rotate(0deg) translateX(0);
+				margin-top: 200px
+				/*width: 300px;*/
+				/*height: 400px;*/
+			}
+			40%{
+				transform: rotate(360deg) translateX(-100px);
+				width: 20px;
+				height: 80px;
+				background-color: #00f;
+				opacity: 0.5;
+				/*margin: 150px 0 0 80px;*/
+
+			}
+			80%{
+				transform: rotate(90deg) translateX(20px);
+				width: 50px;
+				height: 100px;
+				background-color: #aaa;
+				opacity: 0.5;
+				/*margin: 100px 0 0 50px;*/
+
+			}
+			100%{
+				transform: rotate(450deg) translateX(10px);
+				width: 40px;
+				height: 40px;
+				background-color: #0f0;
+				opacity: 0.5;
+				/*margin: 100px 0 0 50px;*/
+			}
+		}
+		@keyframes ture{
+			from{
+				width: 50px;
+			}
+			to{
+				width: 200px;
+			}
+		}
+		.box:hover{
+				animation-play-state: paused;
+			}
+	</style>
+</head>
+<body>
+	<div class="box">
+	<div class="box1"></div>
+	<div class="box2"></div>
+		
+	</div>
+</body>
+</html>

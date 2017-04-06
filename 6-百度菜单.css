@@ -1,0 +1,40 @@
+		.nav{
+			position: fixed;
+			right: 150px;
+			bottom: 100px;
+		}
+		.nav li{
+			width: 50px;
+			height: 50px;
+			list-style: none;
+			text-align: center;
+			line-height: 50px;
+			position: relative;
+			border: 1px solid #eee;
+			overflow: hidden;
+			border-radius: 50px;
+			
+		}
+		.nav a{
+			display: block;
+			width: 50px;
+			height: 50px;
+			text-decoration: none;
+			background-color: #00f;
+			position: absolute;
+			color: #fff;
+			transform: rotate(90deg) ;
+			transform-origin: left bottom;
+			transition: transform 0.5s;
+			border-radius: 50px;
+			font-size: 12px;
+
+		}
+		.nav img{
+			width: 50px;
+			height: 50px;
+		}
+		.nav li:hover a{
+			transform: rotate(0deg);
+
+		}

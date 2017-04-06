@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button class="btn">测试</button>
+	<button class="btn">测试</button>
+	<button class="btn">测试</button>
+	<button class="btn">测试</button>
+	<button class="btn">测试</button>
+
+	<script src='jquery.js'></script>
+	<script>
+
+		$('.btn').click(function(){
+			var picSrc = [
+				'image/0.jpg',
+				'image/1.jpg',
+				'image/2.jpg',
+				'image/3.jpg',
+				'image/4.jpg'
+			];
+
+			console.log(picSrc[0]);
+		});
+	</script>
+</body>
+</html>
